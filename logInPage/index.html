@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log In Page</title>
+    <link rel = "stylesheet" 
+    href = "style.css">
+</head>
+<body>
+    <header>
+        <h1>Log In Page</h1>
+    </header>
+    <section class = "container">
+        <form id = "myForm">
+            <h1>Enter Info</h1>
+            <div class = "msg"></div>
+            <div>
+                <label for = "name">Name:</label>
+                <input type = "text" id = "name">
+            </div>
+            <div>
+                <label for = "email">Email:</label>
+                <input type = "text" id="email">
+            </div>
+            <input class="btn" type="submit" value="Submit">
+            <input class="btn" type="button" value="Refresh" onclick="onRefresh();"/>
+        </form>
+        <ul id="users"></ul>
+        <ul class="items">
+            <h1>Previous Users</h1>
+            <li class="item">User</li>
+            <li class="item">User</li>
+            <li class="item">User</li>
+        </ul>
+  
+     
+    </section>
+    <script src = "dom.js"></script>
+</body>
+</html>
