@@ -9,6 +9,8 @@
     position:relative;
     overflow:hidden;
     background:linear-gradient(to right, #add2dc,#37a6cb);
+    overflow-y: scroll;
+    scroll-behavior: smooth;
 }
 nav{
     width:100%;
