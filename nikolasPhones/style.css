@@ -36,12 +36,45 @@ p {
     color: black;
 }
 .logo{
-    position: relative;
+    display: inline-block;
+    padding: 2px;
+    position: relative;   
+    top: 45%;
     left: 5%;
     flex-basis:20%;
 }
+.logo h2{
+    color:white;
+}
 .logo img{
-    width:100px;
+    width:35px;
+    height:35px;
+}
+.searchBar{
+    position: relative;
+    top: 8%;
+    left: 12%;
+    background: rgb(228, 225, 232);
+    border-radius: 40px;
+    height: 35px;
+    border:none;
+
+}
+.searchButton{
+    color:rgb(33, 121, 168);
+    position: relative;
+    top: 18%;
+    float:right;
+    height: 40px;
+    width: 40px;
+}
+.searchText{
+    background: transparent;
+    border: none;
+    text-align: center;
+    outline: none;
+    line-height: 35px;
+    font-size: 16px;
 }
 .navItems{
     flex:1;
