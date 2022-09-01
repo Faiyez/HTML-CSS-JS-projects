@@ -9,58 +9,68 @@
     <script src="https://kit.fontawesome.com/fafe8c0206.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <div class = 'main'>
-        <div>
-            <nav class = 'navBar'>            
-                <ul class = 'totalUl'>
-                    <li class = 'name'>Faiyez</li>
-                    <li>Home</li>
-                    <li>About</li>
-                    <li>Skills</li>
-                    <li>Services</li>
-                    <li>Contact</li>               
-                </ul>           
-            </nav>
-        </div>
-    <div class = 'about'>
-        <header>
-            <h1>About</h1>
-        </header>
-        <div class = 'aboutInfo'>
-            <div class = 'image'>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum aliquid consequuntur natus dicta hic, eos esse minus. Assumenda recusandae laboriosam, rem non, ea reiciendis suscipit, quia velit enim id ullam!</p>
+    <section id = 'sectionA' class = 'grid'>
+        <div class = 'navigationBar'>
+            <div>
+                <nav class = 'navBar'>            
+                    <ul class = 'totalUl'>
+                        <li class = 'name'>Faiyez</li>
+                        <li>Home</li>
+                        <li>About</li>
+                        <li>Skills</li>
+                        <li>Services</li>
+                        <li>Contact</li>               
+                    </ul>           
+                </nav>
             </div>
-            <div class = 'intro'>
-                <div>
-                    <p>Motivated computer science student looking for real-world
-                        experience. Familiar with programming languages,
-                        operating systems, and maintenance of computers. Quick
-                        learner adaptable to new languages and ready to take on
-                        challenging projects.
-                    </p>
+        </div>
+    </section>
+    <section id = 'sectionB' class = 'grid'>
+        <div class = 'about'>
+            <header>
+                <h1>About</h1>
+            </header>
+            <div class = 'aboutInfo'>
+                <div class = 'image'>
+                    <img src = 'images/self.jpg' id = 'selfImage'>
                 </div>
-
-                <div class = 'expProject'>
+                <div class = 'intro'>
                     <div>
-                        <h1>2+</h1>
-                        <h4>Years of Experience</h4>
+                        <p>Motivated computer science student looking for real-world
+                            experience. Familiar with programming languages,
+                            operating systems, and maintenance of computers. Quick
+                            learner adaptable to new languages and ready to take on
+                            challenging projects.
+                        </p>
+                    </div>
+    
+                    <div class = 'expProject'>
+                        <div>
+                            <h1>2+</h1>
+                            <h4>Years of Experience</h4>
+                        </div>
+                        <div>
+                            <h1>10+</h1>
+                            <h4>Projects Done</h4>
+                        </div>
+    
                     </div>
                     <div>
-                        <h1>10+</h1>
-                        <h4>Projects Done</h4>
+                        <button class = 'button'>Download Resume<i class="fa-solid fa-cloud-arrow-down"></i></button>
                     </div>
-
+                    <div>
+                        <ul class = 'links'>
+                            <li class = 'listItem'><i class="fa-brands fa-facebook" id = 'logoLink'></i>Facebook</li>
+                            <li class = 'listItem'><i class="fa-brands fa-github" id = 'logoLink'></i>GitHub</i></li>
+                            <li class = 'listItem'><i class="fa-solid fa-envelope" id = 'logoLink'></i>Email</li>
+                        </ul>
+                    </div>
                 </div>
-                <div>
-                    <button class = 'button'>Download Resume<i class="fa-solid fa-cloud-arrow-down"></i></button>
-                </div>
+    
             </div>
-
         </div>
-    </div>
 
-    </div>
-
+    </section>
     <script src = 'dom.js'></script>
     
 </body>
