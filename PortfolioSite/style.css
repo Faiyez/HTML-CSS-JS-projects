@@ -1,5 +1,7 @@
 *{
-    font-family: Arial, Helvetica, sans-serif;
+  /*  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif, Arial, Helvetica, sans-serif;
+  */
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;  
     margin: 0;
     padding: 0;  
 }
@@ -7,22 +9,29 @@
     text-align: center;
 }
 nav{
+    position: fixed;
     left: 0px;
     width: 100%;
     height: 50px;
     position: fixed;
     display: inline-block;
-    background: orange;
+    background: rgb(98, 0, 255);
     text-align: center;
+    z-index: 10;
 }
-
+.total{
+    width: 100%;
+    height: 2000px;    
+    background: linear-gradient(to right,rgb(219, 229, 235),rgb(112, 175, 237));
+}
 .totalUl{
-    
+    width: 100%;
+    height: 100%;
 }
 .totalUl li{
     display: inline-block; /*  Item is placed inline  */
     text-align: center;
-    color: white;
+    color: black;
     font-family: Impact;
     font-size: x-large;
     cursor: pointer;
@@ -46,10 +55,10 @@ nav{
     margin-left: auto;  /* Equal margin on width */
     margin-right: auto;
     top: 50px;
-    width: 80%;
-    height: 400px;
-    background: linear-gradient(to right,rgb(186, 247, 229),rgb(140, 227, 203));
-    color: white;
+    width: 90%;
+    height: 100%;
+    background: white;
+    color: black;
 }
 .about .aboutInfo{
     position: relative;
@@ -71,6 +80,9 @@ nav{
     text-align: left;
     padding: 10px;
 }
+.intro p{
+    color: rgba(0, 0, 0, 0.555);
+}
 .expProject{
     margin: 5px;
     padding: 5px;
@@ -82,17 +94,19 @@ nav{
     width: 200px;
     height: 45px;
     border-radius: 5px;
-    background: orange;
+    background: rgb(98, 0, 255);
     font-size: 15px;
-    color: white;
+    color: black;
     cursor: pointer;
     border-style: none;
     margin-top: 10px;
+    text-align: center;
     
 }
 h1{
     font-weight: bold;
     font-size: 40px;
+    padding: 15px;
 }
 .links{
     display: grid;
@@ -103,12 +117,29 @@ h1{
     position: relative;
     list-style: none;
     display: inline-block;   
-    width: 80%;
+    width: 90%;
     height: 100%;
-    background: black;
-    cursor: pointer;
-    
+    cursor: pointer;    
 }
 #logoLink{
     padding-right: 2px;
+}
+#pleaseScroll{
+    display: inline-block;
+}
+.sectionC{
+    position: relative;
+    background: white;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    top: 200px;
+}
+.skillsHeader{
+    position: relative;
+    text-align: center;
+}
+#webDevelopment{
+    position: relative;
+    padding: 5px;
 }
