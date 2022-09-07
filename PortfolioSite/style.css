@@ -15,9 +15,16 @@ nav{
     height: 50px;
     position: fixed;
     display: inline-block;
-    background: rgb(98, 0, 255);
+    background: #0001;
     text-align: center;
     z-index: 10;
+}
+.totalUl li:hover{
+    color: white;
+    transition: all ease 0.3s;
+}
+.sectionA{
+    position: relative;
 }
 .total{
     width: 100%;
@@ -32,7 +39,8 @@ nav{
     display: inline-block; /*  Item is placed inline  */
     text-align: center;
     color: black;
-    font-family: Impact;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
     font-size: x-large;
     cursor: pointer;
     margin: 5px;
@@ -42,6 +50,9 @@ nav{
     position: fixed;
     left: 15px;
     font-size: x-large;
+}
+.sectionB{
+    position: relative;
 }
 .about{
     position: relative;
@@ -94,14 +105,19 @@ nav{
     width: 200px;
     height: 45px;
     border-radius: 5px;
-    background: rgb(98, 0, 255);
+    background: rgb(111, 177, 235);
     font-size: 15px;
     color: black;
     cursor: pointer;
     border-style: none;
     margin-top: 10px;
     text-align: center;
+    transition: ease-out 0.6s;
     
+}
+.button:hover{
+    box-shadow: inset 200px 0 0 0 rgb(30, 75, 148);
+    color:rgb(27, 16, 123);
 }
 h1{
     font-weight: bold;
@@ -142,4 +158,62 @@ h1{
 #webDevelopment{
     position: relative;
     padding: 5px;
+}
+.frontEnd{
+    margin-top: 10px;
+    cursor: pointer;
+    background: yellowgreen;
+    text-align: left;
+}
+.skillItem{
+    padding: 10px;
+}
+.skills {
+    position: relative;
+    top: 8px;
+    height: 2px;
+    display: inline-block;
+    text-align: center; /* Right-align text */
+    padding-top: 10px; /* Add top padding */
+    padding-bottom: 10px; /* Add bottom padding */
+    padding-left: 80px;
+    margin-left: 20px;
+    color: white; /* White text color */
+    
+    background-color: #2080a5;
+}
+  
+.html {
+    display: inline-block;  
+    width: 100px;
+    left: 6.8%;
+} 
+.CSS {
+    position: relative;
+    left: 9.8%;
+    width: 100px;
+}
+.JS{
+    width: 100px;
+}
+.REACT{
+    width: 70px;
+    left: 5.6%;
+}
+#skillInfo{
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+#webUp{
+    display: inline-block;
+    cursor: pointer;
+}
+#feContainer{
+    text-align: left;
+
+}
+#skillId{
+
+    list-style: none;
+    text-align: left;
 }
