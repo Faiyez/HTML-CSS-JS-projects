@@ -149,6 +149,7 @@ h1{
     margin-left: auto;
     margin-right: auto;
     width: 90%;
+    height: 10%;
     top: 200px;
 }
 .skillsHeader{
@@ -160,9 +161,8 @@ h1{
     padding: 5px;
 }
 .frontEnd{
-    margin-top: 10px;
     cursor: pointer;
-    background: yellowgreen;
+    background: transparent;
     text-align: left;
 }
 .skillItem{
@@ -210,10 +210,51 @@ h1{
 }
 #feContainer{
     text-align: left;
-
+    border-radius: 5px;
+    padding: 5px;
+    margin: 5px;
 }
 #skillId{
 
     list-style: none;
     text-align: left;
+}
+.SWEContainer{
+    background: transparent;
+    text-align: left;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 5px;
+    cursor: pointer;
+    padding-top: 10px;
+}
+#webDevSrcDown:hover,#webDevSrcUp:hover,  #sweUp:hover , #sweDown:hover{
+    color: rgb(43, 168, 226);
+}
+.sectionD{
+    position: relative;
+    top: 15%;
+    text-align: center;
+    background: white;
+    margin-left: auto; 
+    margin-right: auto;
+    width: 90%;
+
+}
+.workStudyContainer{
+    position: relative;   
+    display: grid;    
+    background: blue;
+    grid-template-columns: 40% 20% 40%;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 5px;
+}
+.wsDiv{
+    background: rgb(57, 152, 184);
+    height: 100px;
+}
+.wsDivEmpty{
+    background: transparent;
+    height: 100px;
 }
