@@ -53,15 +53,11 @@ nav{
 }
 .sectionB{
     position: relative;
+    
 }
 .about{
     position: relative;
     text-align: center;
-    /*
-    
-    width: 80%;
-    height: 400px;
-    */
     display: block;
     margin-left: auto;  /* Equal margin on width */
     margin-right: auto;
@@ -70,6 +66,7 @@ nav{
     height: 100%;
     background: white;
     color: black;
+    border-radius: 20px;
 }
 .about .aboutInfo{
     position: relative;
@@ -142,9 +139,6 @@ h1{
     padding-right: 2px;
     color:#2080a5;
 }
-#logoLink:hover{
-
-}
 #pleaseScroll{
     display: inline-block;
 }
@@ -156,11 +150,12 @@ h1{
     width: 90%;
     height: 15%;
     top: 200px;
-    
+    border-radius: 20px;
 }
 .skillsHeader{
     position: relative;
     text-align: center;
+    
 }
 #webDevelopment{
     position: relative;
