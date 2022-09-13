@@ -16,11 +16,15 @@
                     <nav class = 'navBar'>            
                         <ul class = 'totalUl'>
                             <li class = 'name'>Faiyez</li>
-                            <li>Home</li>
-                            <li>About</li>
-                            <li>Skills</li>
-                            <li>Services</li>
-                            <li>Contact</li>               
+                            <li><a href = '#sectionB' id = 'navLinks'>Home</a></li>
+                            <li><a href = '#sectionC'>Skills</a></li>
+                            <li><a href = '#sectionD'>About</a></li>
+                            <li><a href = '#'>Contact</a></li>  
+                            <!--    
+                                <ul>
+                                    <li><a href = 'https://www.facebook.com/faiyez.noor.96'>Facebook</a></li>
+                                </ul>     
+                            -->        
                         </ul>           
                     </nav>
                 </div>
@@ -55,11 +59,13 @@
         
                         </div>
                         <div>
-                            <button class = 'button'>Download Resume <i class="fa-solid fa-cloud-arrow-down"></i></button>
+                            <a href = './images/FAIYEZ_NOOR_Resume.pdf' target = 'blank'>
+                                <button class = 'button' >Download Resume <i class="fa-solid fa-cloud-arrow-down"></i></button>
+                            </a>
                         </div>
                         <div>
                             <ul class = 'links'>
-                                <a href = 'https://www.facebook.com/settings?tab=account&section=username'>
+                                <a href = 'https://www.facebook.com/faiyez.noor.96'>
                                     <li class = 'listItem' ><i class="fa-brands fa-facebook" id = 'logoLink'></i>Facebook</li>
                                 </a>
                                 <a href = 'https://github.com/Faiyez'>
@@ -70,20 +76,12 @@
                                 </a>
                                 
                             </ul>
-                  <!--          <button class = 'button' id="pleaseScroll">Please Scroll Down</button> -->
                         </div>                           
                     </div>       
                 </div>
-            </div>
-
-<!--           <div class = 'skills'>
-                <header>
-                    <h1>Skills</h1>
-                </header>
-            </div>
--->            
+            </div>         
         </section>
-        <section class = 'sectionC'>
+        <section class = 'sectionC' id = 'sectionC'>
             <div class = 'skillsHeader'>
                 <h1>Skills</h1>
                 <h4>Professional Skills</h4>
@@ -106,7 +104,7 @@
                 </div>
             </div>
         </section>
-        <section class = 'sectionD'>
+        <section class = 'sectionD' id = "sectionD">
             <div class = 'workStudyHeader'>
                 <h1>Professional History</h1>
                 <h4>Summary</h4>
@@ -154,7 +152,7 @@
                 <div class = 'wsDivEmpty 3'><i class="fa-solid fa-circle fa-xs" id = 'circlePointer'></i></div>    
                    
                 <div class = 'wsDiv 4'>
-                    <h2>Notre Dame Scince Club</h2>
+                    <h2>Notre Dame Science Club</h2>
                     <h3>2016 To 2018</h3>
                     <h3>Volunteer</h3>
                 </div>                                            
@@ -162,6 +160,12 @@
 
         </section>
 
+
+    </section>
+    <section id = 'sectionE'>
+        <footer id = 'footer'>
+            <p4>Faiyez Noor @2022</p4>
+        </footer>
     </section>
     <script src = 'dom.js'></script>
     
