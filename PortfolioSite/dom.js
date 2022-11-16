@@ -8,10 +8,8 @@ var feContainer = document.getElementById("skillInfo");
 var webDevSrcDown = document.getElementById("webDevSrcDown");
 var frontEnd = document.getElementById("feContainer");
 var testHTML = document.getElementById("testHTML");
-/*webDevSrcDown.addEventListener("click",addWebDeveloperInfo);*/
 var skills = document.getElementsByClassName("skillItem");
 var webDevSrcUp = document.getElementById("webDevSrcUp");
-/*webDevSrcUp.addEventListener("click",removeWebDeveloperInfo);*/
 var htmlSkill = document.createElement('li');
 htmlSkill.setAttribute('id', 'skillId');
 htmlSkill.innerHTML += '<h4 class = "skillItem" id = "item">HTML  <div class="skills html"></div></h4>'; 
@@ -32,7 +30,7 @@ var sweContainer = document.getElementById('SWEDevelopment');
 var sweSrcUp = document.getElementById('sweUp');
 var sweSrcDown = document.getElementById('sweDown');
 sweSrcDown.addEventListener("click",addSweInfo);
-sweSrcUp.addEventListener("click",removeSweInfo);
+
 var javaSkill = document.createElement("li");
 javaSkill.setAttribute("id","skillId");
 javaSkill.innerHTML += '<h4 class = "skillItem" id = "item">JAVA  <div class="skills html"></div></h4>'; 
