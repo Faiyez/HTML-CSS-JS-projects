@@ -6,10 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Faiyez</title>
     <link rel = 'stylesheet' href = 'style.css' />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+
     <script src="https://kit.fontawesome.com/fafe8c0206.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <section class = 'total' id = 'all'>
+        
         <section id = 'sectionA' class = 'grid'>
             <div class = 'navigationBar'>
                 <div>
@@ -32,7 +35,13 @@
         </section>
         <section id = 'sectionB' class = 'grid'>
             <div class = 'about'>
-                <h1 class = 'introName'>Hi!! My name is Faiyez</h1>
+                <div class = 'animation'>
+                    <div class = 'bubbles'></div>
+                    <div class = 'bubbles'></div>
+                    <div class = 'bubbles'></div>
+                </div>
+                <h1 class = 'introName'>Hi!! My name is</h1>
+                <h1 class = 'introName lastname'>Faiyez</h1>
                 <div class = 'aboutInfo'>
                     <div class = 'image'>
                         <img src = 'images/self.jpg' id = 'selfImage'>
@@ -79,9 +88,11 @@
                         </div>                           
                     </div>       
                 </div>
+
             </div>         
         </section>
         <section class = 'sectionC' id = 'sectionC'>
+            
             <div class = 'skillsHeader'>
                 <h1>Skills</h1>
                 <h4>Professional Skills</h4>
@@ -159,9 +170,96 @@
             </div>
 
         </section>
+        <section>
+            <div class = 'sectionF'>
+                <h1>Projects</h1>
+                <div class='swiper mySwiper card-container'>
+                    <div class='swiper-wrapper content'>
+                        <div class='swiper-slide card'>
+                            <div class='card-content'>
+                                <h4>Remind Me</h4>
+                                <div class='project-image'>
+                                    <img src="./images/remindMe.png">
+                                    
+                                </div>
+                                <div class='image-icons'>
+                                    <i class="fa-brands fa-react"></i>
+                                </div>
+                                <div class = 'cardButton'>
+                                    <button class = 'Visit Button'>Visit</button>
+                                    <button class = 'GitHub Button'>GitHub</button>
+                                </div>
+                
+                            </div>
+                        </div>
 
+                        <div class='swiper-slide card'>
+                            <div class='card-content'>
+                                <h4>Remind Me</h4>
+                                <div class='project-image'>
+                                    <img src="./images/remindMe.png">
+                                    
+                                </div>
+                                <div class='image-icons'>
+                                    <i class="fa-brands fa-react"></i>
+                                </div>
+                                <div class = 'cardButton'>
+                                    <button class = 'Visit Button'>Visit</button>
+                                    <button class = 'GitHub Button'>GitHub</button>
+                                </div>
+                
+                            </div>
+                        </div>
+
+                        <div class='swiper-slide card'>
+                            <div class='card-content'>
+                                <h4>Remind Me</h4>
+                                <div class='project-image'>
+                                    <img src="./images/remindMe.png">
+                                    
+                                </div>
+                                <div class='image-icons'>
+                                    <i class="fa-brands fa-react"></i>
+                                </div>
+                                <div class = 'cardButton'>
+                                    <button class = 'Visit Button'>Visit</button>
+                                    <button class = 'GitHub Button'>GitHub</button>
+                                </div>
+                
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div> 
+            </div>
+        </section>
+        <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+        <!-- Initialize Swiper -->
+        <script>
+          var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 3,
+            spaceBetween: 30,
+            slidesPerGroup: 3,
+            loop: true,
+            loopFillGroupWithBlank: true,
+            pagination: {
+              el: ".swiper-pagination",
+              clickable: true,
+            },
+            navigation: {
+              nextEl: ".swiper-button-next",
+              prevEl: ".swiper-button-prev",
+            },
+          });
+        </script>
 
     </section>
+        
+    
     <!--
     <section class = 'sectionF'>
         <div class = 'contactInfoContainer'>

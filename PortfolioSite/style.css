@@ -6,7 +6,7 @@
     padding: 0;  
 }
 @media (max-width: 768px){
-    .sectionA .sectionB .sectionC .sectionD{
+    .sectionA .sectionB .sectionC .sectionD .sectionF{
         grid-template-columns: 1fr;
         grid-template-rows: 1fr;
     }
@@ -66,7 +66,7 @@ nav{
 }
 .total{
     width: 100%;
-    height: 1750px;    
+    height: 3000px;    
     background: linear-gradient(to right,rgb(219, 229, 235),rgb(112, 175, 237));   
 }
 .totalUl{
@@ -95,15 +95,42 @@ nav{
     display: block;
     margin-left: auto;  /* Equal margin on width */
     margin-right: auto;
-    top: 100px;
+    top: 75px;
     width: 90%;
     height: 100%;
+    
     background: white;
+    
     color: black;
     border-radius: 20px;
 }
+.animation .bubbles{
+    position: relative;
+    align-items: center;
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background:rgb(118, 210, 226);
+    margin: 0 4px;
+    border-radius: 50%;
+    animation: animate 15s linear infinite;
+}
+@keyframes animate{
+    0%
+    {
+        transform: translateY(100vh) scale(0);
+    }
+    100%
+    {
+        transform: translateY(-10vh) scale(1);
+    }
+}
 .about .introName{
     text-align: center;
+    display: inline-block;
+}
+.lastname{
+    color: orange;
 }
 .about .aboutInfo{
     position: relative;
@@ -115,7 +142,35 @@ nav{
 }
 .image{
     height: 350px;
+    animation-name: my-animation;
+    animation-duration: 1.5s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+  
+  /* other properties */
+  
+    /*width: 300px;
+    border-radius: 10px;
+    position: absolute;*/
+    position: relative;
+    left: 0; 
+    right: 0; 
+    top: 0;
+    margin-left: auto;
+    margin-right: auto; 
+    
 }
+@keyframes my-animation {
+    from {
+      width: 300px;
+      top: 10px;
+    }
+    to {
+      width: 300px;
+      top: 20px;
+    }
+  }
 #selfImage{
     max-width: 100%;
     height: 300px;
@@ -333,15 +388,101 @@ h1{
 .a{
     color:rgb(24, 111, 152);
 }
+
 .sectionF{
     position: relative;
+    background: white;
     text-align: center;
-    display:grid;
     margin-left: auto;
     margin-right: auto;
+    align-items: center;
+    justify-content: center;
     width: 90%;
-    height: 50px;
+    height: 100vh;
+    top: 500px;
+    border-radius: 20px;
 }
+.card{
+    position: relative;
+    background:white;
+    border-radius: 20px;
+}
+.card-container{
+    display: flex;
+    align-items: center;
+    top: 10px;
+    align-items: center;
+    justify-content: center;
+}
+.card::before{
+    content:"";
+    position:absolute;
+    height: 40%;
+    width: 100%;
+    /*background: #2080a5;*/
+    border-radius: 20px 20px 0 0;
+}
+.card .card-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 180px;
+    height: 240px;
+    background: rgba(6, 198, 232, 0.067);
+    border-radius: 10px;
+    position: relative;
+    z-index: 100;
+}
+
+.card .project-image {
+    width: 140px;
+    height: 140px;
+    border-radius: 10px;
+    align-items: center;
+    padding: 3px;
+    background:rgba(0, 0, 0, 0.555)
+}
+.card .project-image img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.cardButton{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin-top: 15px;
+    transition: all 0.3s ease;
+
+}
+.Button{
+    background: #129cd2;
+    font-size: 18px;
+    color: black;
+    border: none;
+    width: 70px;
+    height: 30px;
+    border-radius: 5px;
+    
+}
+.Button:hover{
+    background: #45caff;
+    cursor: pointer;
+}
+.swiper{
+    width: 750px;
+}
+/*
+.sectionC{
+    background-image: url('./images/computerEdited.jpg'); 
+    background-size: cover; 
+    height:480px; 
+    padding-top:80px;   
+}
+*/
+
 #footer{
     display: flex;
     align-items: center;
