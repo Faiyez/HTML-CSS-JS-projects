@@ -7,7 +7,6 @@
     <title>Faiyez</title>
     <link rel = 'stylesheet' href = 'style.css' />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
-
     <script src="https://kit.fontawesome.com/fafe8c0206.js" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -35,13 +34,34 @@
         </section>
         <section id = 'sectionB' class = 'grid'>
             <div class = 'about'>
+                <!--
                 <div class = 'animation'>
                     <div class = 'bubbles'></div>
                     <div class = 'bubbles'></div>
                     <div class = 'bubbles'></div>
                 </div>
-                <h1 class = 'introName'>Hi!! My name is</h1>
-                <h1 class = 'introName lastname'>Faiyez</h1>
+                -->
+                <h1 class = 'introName'>Hi!! My name is Faiyez.</h1>
+                <div class="textAnimation">
+                    <span class="text first-text">I am a</span>
+                    <span class="text sec-text"></span>
+                </div>
+                <script>
+                    const text = document.querySelector('.sec-text');
+                    const textLoad = () =>{
+                        setTimeout(() => {
+                            text.textContent='Web Developer';
+                        },0);
+                        setTimeout(() => {
+                            text.textContent = 'Software Developer';
+                        },4000);
+                        setTimeout(() => {
+                            text.textContent='Content Creator';
+                        }, 8000);
+                    }
+                    textLoad();
+                    setInterval(textLoad,12000);
+                </script>
                 <div class = 'aboutInfo'>
                     <div class = 'image'>
                         <img src = 'images/self.jpg' id = 'selfImage'>
@@ -58,7 +78,7 @@
         
                         <div class = 'expProject'>
                             <div>
-                                <h1>2+</h1>
+                                <h1>4+</h1>
                                 <h4>Years of Experience</h4>
                             </div>
                             <div>
@@ -94,24 +114,17 @@
         <section class = 'sectionC' id = 'sectionC'>
             
             <div class = 'skillsHeader'>
-                <h1>Skills</h1>
-                <h4>Professional Skills</h4>
+                <h1 class="hidden">Skills</h1>
+                <h4 class="hidden">Professional Skills</h4>
             </div>
             <div class = 'skillInfomation' id = 'skillInfo'>
                 <div class = "frontEnd" id = "feContainer">
                     <i class="fa-solid fa-code " id = 'webDevelopment'>
                          Web Development
                     </i>
-                    <i class="fa-solid fa-angle-down fa-xl " id = "webDevSrcDown">
-
-                    </i>
-                    <i class="fa-solid fa-angle-up fa-xl" id = "webDevSrcUp"></i>
                 </div>
                 <div class = 'SWEContainer' id = 'SWEDevelopment'>
-                    <i class="fa-solid fa-gears "> Software Development</i>
-                    <i class="fa-solid fa-angle-down fa-xl" id = "sweDown">
-                    </i>
-                    <i class="fa-solid fa-angle-up fa-xl" id = "sweUp"></i>                    
+                    <i class="fa-solid fa-gears "> Software Development</i>                    
                 </div>
             </div>
             <div id='skillsDisplay'>
