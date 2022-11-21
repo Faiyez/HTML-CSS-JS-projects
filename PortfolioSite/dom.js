@@ -14,10 +14,16 @@ const observer = new IntersectionObserver((entries) =>{
 })
 const hidden = document.querySelectorAll('.hidden');
 hidden.forEach((el) => observer.observe(el));
+const hiddenRight = document.querySelectorAll('.hiddenRight');
+hiddenRight.forEach((el) => observer.observe(el));
 var webDevelopment = document.getElementById("webDevelopment");
 webDevelopment.addEventListener("click",addWebDeveloperInfo);
 var SWEDevelopment = document.getElementById("SWEDevelopment");
 SWEDevelopment.addEventListener("click",addSweInfo);
+//SWEDevelopment.addEventListener("click",changeColor);
+function changeColor(){
+    feContainer.style.background = 'black';
+}
 var skillsDisplay = document.getElementById("skillsDisplay");
 var feContainer = document.getElementById("skillInfo");
 var webDevSrcDown = document.getElementById("webDevSrcDown");
@@ -38,6 +44,12 @@ JSSkill.innerHTML += '<h2 class = "skillItem" id = "item"><i class="fa-solid fa-
 var reactSkill = document.createElement('li');
 reactSkill.setAttribute('id', 'skillId');
 reactSkill.innerHTML += '<h2 class = "skillItem" id = "item"><i class="fa-solid fa-square-check"></i>  React JS   <i class="fa-brands fa-react"></i></h2>'; 
+var javaSkill = document.createElement("li");
+javaSkill.setAttribute("id","skillId");
+javaSkill.innerHTML += '<h2 class = "skillItem" id = "item"><i class="fa-solid fa-square-check"></i>  JAVA   <i class="fa-brands fa-java"></i></h2>'; 
+var pythonSkill = document.createElement("li");
+pythonSkill.setAttribute("id","skillId");
+pythonSkill.innerHTML += '<h2 class = "skillItem" id = "item"><i class="fa-solid fa-square-check"></i> Python  <i class="fa-brands fa-python"></i></h2>'; 
 function addWebDeveloperInfo(e){
     deleteChild();
     webDevelopment.style.backgroundColor='#90e0ef';
@@ -53,12 +65,6 @@ var sweSrcUp = document.getElementById('sweUp');
 var sweSrcDown = document.getElementById('sweDown');
 sweSrcDown.addEventListener("click",addSweInfo);
 
-var javaSkill = document.createElement("li");
-javaSkill.setAttribute("id","skillId");
-javaSkill.innerHTML += '<h2 class = "skillItem" id = "item"><i class="fa-solid fa-square-check"></i>  JAVA   <i class="fa-brands fa-java"></i></h2>'; 
-var pythonSkill = document.createElement("li");
-pythonSkill.setAttribute("id","skillId");
-pythonSkill.innerHTML += '<h2 class = "skillItem" id = "item"><i class="fa-solid fa-square-check"></i> Python  <i class="fa-brands fa-python"></i></h2>'; 
 function deleteChild(){
     var container = document.getElementById('skillsDisplay');
     container.innerHTML = '';

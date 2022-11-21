@@ -174,7 +174,7 @@ nav{
 .image{
     height: 350px;
     animation-name: my-animation;
-    animation-duration: 1.0s;
+    animation-duration: 1.5s;
     animation-direction: alternate;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
@@ -347,13 +347,15 @@ h1{
     cursor: pointer;
 }
 #feContainer{
+    display: flex;
+    align-items: center;
+    width: 400px;
     text-align: center;
     border-radius: 5px;
     padding: 5px;
     margin: 5px;
 }
 #skillId{
-
     list-style: none;
     text-align: left;
 }
@@ -369,6 +371,7 @@ h1{
     padding-top: 10px;
 }
 #SWEDevelopment{
+    position: relative;
     transition: 0.5s;
 }
 #SWEDevelopment:hover{
@@ -547,6 +550,11 @@ h1{
     transition: all 1s;
     filter: blur(5px);transform: translateX(-100%);
 }
+.hiddenRight{
+    opacity: 0;
+    transition: all 1s;
+    filter: blur(5px);transform: translateX(100%);    
+}
 .show {
     opacity: 1;
     filter: blur(0);
@@ -554,6 +562,9 @@ h1{
 }
 @media(prefers-reduced-motion){
     .hidden{
+        transition: none;
+    }
+    .hiddenRight{
         transition: none;
     }
 }
