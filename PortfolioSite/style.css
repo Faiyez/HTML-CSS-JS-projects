@@ -503,6 +503,11 @@ h1{
     object-fit: cover;
     border-radius: 10px;
 }
+.projectDes{
+    text-align: left;
+    padding: 5px;
+    margin: 5px;
+}
 .cardButton{
     display: flex;
     justify-content: space-around;
