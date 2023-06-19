@@ -67,7 +67,9 @@ nav{
 .total{
     width: 100%;
     height: 3000px;    
-    background: linear-gradient(to right,rgb(219, 229, 235),rgb(112, 175, 237));   
+    /*background: linear-gradient(to right,rgb(219, 229, 235),rgb(112, 175, 237)); */ 
+    background: #D9F4FF;
+     
 }
 .totalUl{
     width: 100%;
@@ -137,12 +139,12 @@ nav{
 }
 .textAnimation .text{
     position: relative;
-    color:#129cd2;
+    color:#67D0E6;
     font-size: 30px;
     font-weight: 600;
 }
 .textAnimation .first-text{
-    color:black;
+    color:#090909;
 }
 .textAnimation .sec-text:before{
     content:"";
@@ -226,7 +228,7 @@ nav{
     width: 200px;
     height: 45px;
     border-radius: 5px;
-    background: rgb(111, 177, 235);
+    background: #67D0E6;
     font-size: 15px;
     color: black;
     cursor: pointer;
@@ -263,11 +265,11 @@ h1{
     width: 90%;
     height: 100%;
     cursor: pointer;    
-    color:rgb(111, 177, 235);
+    color:#67D0E6;
 }
 #logoLink{
     padding-right: 2px;
-    color:#2080a5;
+    color:#67D0E6;
 }
 #pleaseScroll{
     display: inline-block;
@@ -317,7 +319,7 @@ h1{
     padding-left: 80px;
     margin-left: 20px;
     color: white; /* White text color */
-    background-color: #2080a5;
+    background-color: #67D0E6;
 }
   
 .html {
@@ -382,11 +384,60 @@ h1{
     transform: translateY(-5px);
     color: rgb(43, 168, 226);
 }
+
+
+
+
 .sectionC{
     display: flex;
     flex-direction: column;
     align-items: center;
 }
+.allSkills{
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    height: 100%;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.frontEndSkills{
+    display: flex;
+    flex-direction: column;
+    background:rgb(230, 246, 248);
+    border-radius: 5px;
+}
+.frontEndLabel{
+    align-self: center;
+}
+.frontEndContainer{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.backEndSkills{
+    display: flex;
+    flex-direction: column;
+    background:rgb(217, 246, 251);
+}
+.backEndLabel{
+    align-self: center;
+}
+.backEndContainer{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.skillItem{
+    margin: 10px;
+}
+.frontEndLabel{
+    margin: 20px;
+}
+.backEndLabel{
+    margin: 20px;
+}
+
+
 .sectionD{
     position: relative;
     top: 15%;
@@ -411,7 +462,7 @@ h1{
     border-radius: 5px;
 }
 .wsDiv{
-    background: rgb(111, 177, 235);
+    background: #67D0E6;
     height: 100px;
     padding-top: 10px;
     border-radius: 10px;
@@ -437,10 +488,10 @@ h1{
     background: transparent;
 }
 #circlePointer{
-    color:rgb(24, 111, 152);
+    color:#67D0E6;
 }
 .a{
-    color:rgb(24, 111, 152);
+    color:#67D0E6;
 }
 
 .sectionF{
@@ -517,7 +568,7 @@ h1{
 
 }
 .Button{
-    background: #129cd2;
+    background: #67D0E6;
     font-size: 18px;
     color: black;
     border: none;
@@ -527,7 +578,7 @@ h1{
     
 }
 .Button:hover{
-    background: #45caff;
+    background: #cdedf9;
     cursor: pointer;
 }
 .swiper{
